@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Lato', Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -19,26 +19,24 @@
             overflow: hidden;
         }
         header {
-            background: #333;
+            background: #1E3A8A;
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
+            padding: 20px 0;
+            border-bottom: 3px solid #FB7185;
         }
         header a {
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 16px;
+            margin: 0 10px;
         }
         header ul {
             padding: 0;
             list-style: none;
         }
         header li {
-            float: left;
             display: inline;
-            padding: 0 20px 0 20px;
         }
         header #branding {
             float: left;
@@ -48,51 +46,90 @@
         }
         header nav {
             float: right;
-            margin-top: 10px;
+        }
+        header nav ul li:hover a {
+            color: #FB7185;
         }
         #showcase {
             min-height: 400px;
-            background: url('photography.jpg') no-repeat 0 -400px;
+            background: url('photography.jpg') no-repeat center center/cover;
             text-align: center;
             color: #fff;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         #showcase h1 {
-            margin-top: 100px;
             font-size: 55px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px #333;
         }
         #showcase p {
             font-size: 20px;
         }
         .button {
             display: inline-block;
-            color: #333;
-            background: #77aaff;
+            color: #fff;
+            background: #FB7185;
             padding: 10px 20px;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 18px;
+            border-radius: 5px;
+            box-shadow: 2px 2px #333;
+        }
+        .button:hover {
+            background: #FF8F9E;
         }
         #services {
-            padding: 20px 0;
+            padding: 40px 0;
+            background: #f4f4f4;
             text-align: center;
+        }
+        #services h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
         }
         #services .box {
             width: 30%;
             float: left;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
+            background: #fff;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #services .box:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
         }
         #services .box i {
             font-size: 50px;
             margin-bottom: 10px;
+            color: #FB7185;
+        }
+        #services .box h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
         }
         footer {
             padding: 20px;
-            margin-top: 20px;
+            background-color: #1E3A8A;
             color: #fff;
-            background-color: #333;
             text-align: center;
+        }
+        footer a {
+            color: #FB7185;
+            margin: 0 5px;
+        }
+        footer a:hover {
+            color: #FF8F9E;
+        }
+        footer .fa-2x {
+            margin: 0 10px;
         }
     </style>
 </head>
@@ -106,6 +143,7 @@
                 <ul>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -114,7 +152,7 @@
     <section id="showcase">
         <div class="container">
             <h1>Capturing Moments, Creating Memories</h1>
-            <p>Professional photography services in the Kansas City area.</p>
+            <p>Professional photography services based in Johnson County, Kansas.</p>
             <a href="#contact" class="button">Contact Us</a>
         </div>
     </section>
@@ -138,12 +176,19 @@
         </div>
     </section>
 
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>Established in November 2024, S4KC Services LLC is a professional photography business registered in Johnson County, Kansas. We are dedicated to capturing life's most cherished moments with passion and precision.</p>
+        <p>Business ID: 10016269 | EIN: 33-2174448</p>
+    </section>
+
     <footer id="contact">
-        <p>Contact us at <a href="mailto:yes4kc@gmail.com">yes4kc@gmail.com</a> or call (913) 303-8611</p>
+        <p>Contact us at <a href="mailto:yes4kc@gmail.com">yes4kc@gmail.com</a> or call <a href="tel:9133038611">(913) 303-8611</a></p>
         <p>Follow us on social media:</p>
         <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
         <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
         <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+        <p>&copy; 2024 S4KC Services LLC</p>
     </footer>
 </body>
 </html>
